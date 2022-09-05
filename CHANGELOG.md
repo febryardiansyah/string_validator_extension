@@ -1,3 +1,3 @@
-## 0.0.1
+## 0.0.1 - 5 Sep 2022
 
-* TODO: Describe initial release.
+* First Release

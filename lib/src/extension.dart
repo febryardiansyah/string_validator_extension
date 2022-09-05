@@ -22,9 +22,7 @@ extension StringExt on String {
   bool isPhoneNumber() => _phone.hasMatch(this);
 
   /// check if string is hexa
-  bool isHexa() {
-    return _hexadecimal.hasMatch(this);
-  }
+  bool isHexa() => _hexadecimal.hasMatch(this);
 
   /// check if string is valid vector
   /// example: image.svg

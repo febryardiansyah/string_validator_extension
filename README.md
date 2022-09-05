@@ -1,39 +1,71 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# String Validator Extension
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Dart extension for string validation, especially from user input.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+1\. Add dependency to your package's `pubspec.yaml` file:
+
+    dependencies:
+      validators: ^0.0.1 # change to latest version
+
+2\. Run from the command line:
+
+    $ pub get
+
+Alternatively, your editor might support pub. Check the docs for your editor to learn more.
+
+3\. Import in your Dart code:
+
+    import 'package:string_validator_extension/extension.dart';
+
+## Usage
+
+Example how to use this, just added validation you want.
 
 ```dart
-const like = 'sample';
+final isEmail = 'john@gmail.com'.isEmail();
+final emailNotValid = 'john@gmail'.isEmail();
+final isUrl = 'https://google.com'.isUrl();
+
+print(isEmail); // true
+print(emailNotValid); // false
+print(isUrl); // true
 ```
 
-## Additional information
+## Availiable Extension
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+```dart
+* bool equals(comparison)
+* bool isEmail()
+* bool isURL()
+* bool validUsername()
+* bool isPhoneNumber()
+* bool isHexa()
+* bool isVector()
+* bool isImage()
+* bool isAudio()
+* bool isVideo()
+* bool isTxt()
+* bool isDoc()
+* bool isExcel()
+* bool isPpt()
+* bool isApk()
+* bool isPdf()
+* bool isHTML()
+* bool isBasicDateTime()
+* bool isBinary()
+* bool isMd5()
+* bool isSha1()
+* bool isSha256()
+* bool isIpv4()
+* bool isIpv5()
+* bool isPassportNumber()
+* bool isCurrency()
+* bool isNumericOnly()
+* bool isAplhabetOnly()
+```
+
+## Contribution
+
+If you wish to contribute, fork this repository and add your extension. Create a PR & i'll check it.
