@@ -1,5 +1,5 @@
 name: string_validator_extension
-description: A new Flutter package project.
+description: Dart extension for string validation.
 version: 0.0.1
 homepage: https://dart.dev/tools/pub/pubspec
 
