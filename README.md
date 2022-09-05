@@ -2,6 +2,10 @@
 
 Dart extension for string validation, especially from user input.
 
+## Demo
+
+<img src="https://raw.githubusercontent.com/febryardiansyah/string_validator_extension/master/assets/demo.gif?raw=true" height="400em" width="225em" />
+
 ## Usage
 
 1\. Add dependency to your package's `pubspec.yaml` file:
@@ -33,37 +37,37 @@ print(emailNotValid); // false
 print(isUrl); // true
 ```
 
-## Availiable Extension
+## Available Extension
 
 ```dart
-* bool equals(comparison)
-* bool isEmail()
-* bool isURL()
-* bool validUsername()
-* bool isPhoneNumber()
-* bool isHexa()
-* bool isVector()
-* bool isImage()
-* bool isAudio()
-* bool isVideo()
-* bool isTxt()
-* bool isDoc()
-* bool isExcel()
-* bool isPpt()
-* bool isApk()
-* bool isPdf()
-* bool isHTML()
-* bool isBasicDateTime()
-* bool isBinary()
-* bool isMd5()
-* bool isSha1()
-* bool isSha256()
-* bool isIpv4()
-* bool isIpv5()
-* bool isPassportNumber()
-* bool isCurrency()
-* bool isNumericOnly()
-* bool isAplhabetOnly()
+bool equals(comparison)
+bool isEmail()
+bool isURL()
+bool validUsername()
+bool isPhoneNumber()
+bool isHexa()
+bool isVector()
+bool isImage()
+bool isAudio()
+bool isVideo()
+bool isTxt()
+bool isDoc()
+bool isExcel()
+bool isPpt()
+bool isApk()
+bool isPdf()
+bool isHTML()
+bool isBasicDateTime()
+bool isBinary()
+bool isMd5()
+bool isSha1()
+bool isSha256()
+bool isIpv4()
+bool isIpv5()
+bool isPassportNumber()
+bool isCurrency()
+bool isNumericOnly()
+bool isAplhabetOnly()
 ```
 
 ## Contribution

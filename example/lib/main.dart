@@ -31,6 +31,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final emailEdc = TextEditingController();
   bool isEmailValid = false;
+  final formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -40,20 +41,37 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            TextField(
-              controller: emailEdc,
-              decoration: const InputDecoration(hintText: 'Input email'),
-              onChanged: (value){
-                setState(() {
-                  isEmailValid = value.isEmail();
-                });
-              },
-            ),
-            const SizedBox(height: 8),
-            Text('Is Email Valid: $isEmailValid'),
-          ],
+        child: Form(
+          key: formKey,
+          child: Column(
+            children: [
+              TextFormField(
+                controller: emailEdc,
+                decoration: const InputDecoration(hintText: 'Input email'),
+                onChanged: (value) {
+                  setState(() {
+                    isEmailValid = value.isEmail();
+                  });
+                },
+                validator: (val) {
+                  if (val == null) {
+                    return null;
+                  }
+                  return !val.isEmail() ? 'Email is not valid' : null;
+                },
+              ),
+              const SizedBox(height: 16),
+              Text('Is Email Valid: $isEmailValid'),
+              ElevatedButton(
+                child: const Text('Check Email'),
+                onPressed: () {
+                  if (formKey.currentState!.validate()) {
+                    
+                  }
+                },
+              )
+            ],
+          ),
         ),
       ),
     );
