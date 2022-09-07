@@ -11,7 +11,7 @@ Dart extension for string validation, especially from user input.
 1\. Add dependency to your package's `pubspec.yaml` file:
 
     dependencies:
-      validators: ^0.0.1 # change to latest version
+      string_validator_extension: ^0.0.1 # change to latest version
 
 2\. Run from the command line:
 
