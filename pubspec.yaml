@@ -1,11 +1,11 @@
 name: string_validator_extension
 description: Dart extension for string validation.
-version: 0.0.2
+version: 1.0.0
 homepage: https://dart.dev/tools/pub/pubspec
 
 environment:
-  sdk: ">=2.16.2 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:

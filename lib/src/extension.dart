@@ -1,4 +1,4 @@
-part 'regex_collection.dart';
+part '_regex_collection.dart';
 
 extension StringExt on String {
   /// check string if equal to comparison, it return true or false

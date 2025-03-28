@@ -65,9 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ElevatedButton(
                 child: const Text('Check Email'),
                 onPressed: () {
-                  if (formKey.currentState!.validate()) {
-                    
-                  }
+                  if (formKey.currentState!.validate()) {}
                 },
               )
             ],

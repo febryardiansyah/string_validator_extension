@@ -1,3 +1,4 @@
-## 0.0.1 - 5 Sep 2022
+## 1.0.0 - 3 March 2025
 
-* First Release
+* Migrate SDK to > 3
+* Update example app
